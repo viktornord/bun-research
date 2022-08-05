@@ -1,11 +1,13 @@
 {
-    "compilerOptions": {
+  "compilerOptions": {
 //      "lib": ["ESNext"],
 //      "module": "esnext",
-      "target": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
 //      "moduleResolution": "node",
-      "esModuleInterop": true,
-      // "bun-types" is the important part
-      "types": ["bun-types"]
-    }
+    "esModuleInterop": true,
+    // "bun-types" is the important part
+    "types": ["bun-types"]
   }
+}
