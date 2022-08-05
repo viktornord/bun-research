@@ -14,11 +14,12 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "build": "bun install && yarn && cp sqlite-seed.db sqlite.db",
+    "build": "bun install && yarn && cp sqlite-seed.db benchmark/sqlite.db && cp sqlite-seed.db todo/sqlite.db",
     "benchmark": "autocannon -c 100 -r 2000 -d 10 -W -m POST http://localhost:3000 --debug",
-    "start:bun:sqlite-sync": "bun run src/bun-sqlite-sync.ts",
-    "start:node:sqlite-sync": "node src/node-sqlite-sync.mjs",
-    "start:node:sqlite-async": "node src/node-sqlite-async.mjs",
+    "start:bun:todos": "bun run todo/src/app.ts",
+    "start:bun:sqlite-sync": "bun run benchmark/bun-sqlite-sync.ts",
+    "start:node:sqlite-sync": "node benchmark/node-sqlite-sync.mjs",
+    "start:node:sqlite-async": "node benchmark/node-sqlite-async.mjs",
     "test:bun:sqlite-sync": "npm run start:bun:sqlite-sync",
     "test:node:sqlite-sync": "npm run start:node:sqlite-sync",
     "test:node:sqlite-async": "npm run start:node:sqlite-async"

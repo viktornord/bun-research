@@ -8,12 +8,12 @@
 
 ## Bun with its sqlite database (synchronous API)
 
-![Latency avg 91ms. Throughput avg 1079 req/sec](hono/benchmark-images/bun-sqlite-sync.png)
+![Latency avg 91ms. Throughput avg 1079 req/sec](hono/benchmark/images/bun-sqlite-sync.png)
 
 ## Node with sqlite database (synchronous API)
 
-![Latency avg 91ms. Throughput avg 1079 req/sec](hono/benchmark-images/node-sqlite-sync.png)
+![Latency avg 91ms. Throughput avg 1079 req/sec](hono/benchmark/images/node-sqlite-sync.png)
 
 ## Node with sqlite database (asynchronous API)
 
-![Latency avg 91ms. Throughput avg 1079 req/sec](hono/benchmark-images/node-sqlite-async.png)
+![Latency avg 91ms. Throughput avg 1079 req/sec](hono/benchmark/images/node-sqlite-async.png)
