@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": "bun install && yarn && cp sqlite-seed.db sqlite.db",
-    "benchmark": "autocannon -c 100 -d 10 -W -m POST http://localhost:3000 --debug",
+    "benchmark": "autocannon -c 100 -r 2000 -d 10 -W -m POST http://localhost:3000 --debug",
     "start:bun:sqlite-sync": "bun run src/bun-sqlite-sync.ts",
     "start:node:sqlite-sync": "node src/node-sqlite-sync.mjs",
     "start:node:sqlite-async": "node src/node-sqlite-async.mjs",
