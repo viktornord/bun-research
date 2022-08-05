@@ -1,0 +1,27 @@
+{
+  "version": "1.0.4",
+  "name": "hono",
+  "devDependencies": {
+    "@types/pg": "^8.6.5",
+    "bun-types": "latest"
+  },
+  "dependencies": {
+    "autocannon": "^7.9.0",
+    "better-sqlite3": "^7.6.2",
+    "hono": "^2.0.0",
+    "node-fetch": "^3.2.10",
+    "sqlite3": "^5.0.11",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "build": "bun install && yarn && cp sqlite-seed.db sqlite.db",
+    "benchmark": "autocannon -c 100 -d 10 -W -m POST http://localhost:3000 --debug",
+    "start:bun:sqlite-sync": "bun run src/bun-sqlite-sync.ts",
+    "start:node:sqlite-sync": "node src/node-sqlite-sync.mjs",
+    "start:node:sqlite-async": "node src/node-sqlite-async.mjs",
+    "test:bun:sqlite-sync": "npm run start:bun:sqlite-sync",
+    "test:node:sqlite-sync": "npm run start:node:sqlite-sync",
+    "test:node:sqlite-async": "npm run start:node:sqlite-async"
+  },
+  "module": "src/index.js"
+}
