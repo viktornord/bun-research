@@ -1,21 +1,28 @@
 # React with Bun / Node
 
-Develop
+## Installation
+
 ```
-npm run start | bun run start | bun dev
+npm install | bun install
 ```
 
-Build
+<br/>
+
+## Available Scripts
+
+### Develop
+```
+npm start | npm run start | bun start | bun run start | bun dev
+```
+### Test
+```
+npm test | npm run test | bun test | bun run test
+```
+### Build
 ```
 npm run build | bun run build
 ```
-
-Test
-```
-npm run test | bun run test
-```
-
-Eject
+### Eject
 ```
 npm run eject | bun run eject
 ```
