@@ -56,7 +56,7 @@ Bun can run JSX/TSX files on-the-spot, offering a big advantage over Node.js, as
 ### Frameworks support
 | Framemork | Support | Comment |
 |---|---|---|
-| [Hono](https://www.npmjs.com/package/hono)   | :white_check_mark: | Seems to be very basic framework with small amount weekly downloads |
+| [Hono](https://www.npmjs.com/package/hono)   | :white_check_mark: | Seems to be very basic framework with small amount weekly downloads. Also there is an [issue](https://github.com/honojs/hono/issues/440) with bun, when defining DELETE end points |
 | [Express](https://www.npmjs.com/package/express) | :x: | See [github issue](https://github.com/oven-sh/bun/issues/496) |
 | [Fastify](https://www.npmjs.com/package/fastify)  | :x: |   |
 | [Nest](https://www.npmjs.com/package/@nestjs/core)  | :x: | Nest utilizes express / fastify under the hood which leads to the same errors we have for the underlying framework |
