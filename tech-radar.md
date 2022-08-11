@@ -1,7 +1,7 @@
 ---
 title:      "Bun js"
-ring:       monitor 
-quadrant:   Javascript runtime 
+ring:       hold
+quadrant:   platforms-and-services
 featured:   true
 ---
 

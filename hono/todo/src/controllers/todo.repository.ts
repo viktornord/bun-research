@@ -29,7 +29,7 @@ export class TodoRepository {
     }
 
     async deleteById(id: number): Promise<Todo> {
-        return db.query('SELECT * FROM todos WHERE id = $id RETURNING *').get({ $id: id });
+        return db.query('DELETE FROM todos WHERE id = $id RETURNING *').get({ $id: id });
     }
 
     prepareData(data: Record<string, unknown>): { data: Record<string, unknown>, keys: string[], keyBindings: string[] } {
