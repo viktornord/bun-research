@@ -69,7 +69,7 @@ Bun can run JSX/TSX files on-the-spot, offering a big advantage over Node.js, as
 | [Postgres](https://www.npmjs.com/package/pg) | :x: | See [github issue](https://github.com/oven-sh/bun/issues/288) |
 | [Sqlite](https://www.npmjs.com/package/sqlite3)  | :x: | Synchronous version of sqlite provided by bun. However there is an [github issue](https://github.com/oven-sh/bun/issues/978) raised already |
 
-[Result of benchmarking](https://gitlab.lohika.com/rnd-hub/bun-research) - Bun is apparently faster when we run the same app on node with synchronous sqlite but if we run node with async sqlite then it beats bun. Probably if bun implements async sqlite it will be better and might be useful. 
+[Result of benchmarking](https://github.com/viktornord/bun-research/blob/main/README.md) - Bun is apparently faster when we run the same app on node with synchronous sqlite but if we run node with async sqlite then it beats bun. Probably if bun implements async sqlite it will be better and might be useful. 
 
 ### Summary
 As of now bun does not work with any major framework except hono. Also, no database client is supported except sqlite which is synchronous. So it seems like currently bun is not supposed to be used for production apps. 
