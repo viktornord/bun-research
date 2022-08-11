@@ -14,21 +14,6 @@ const home = app
       throw err;
     }
   })
-  .delete('/todos/:id', async (c) => {
-    try {
-      const id = Number(c.req.param('id'));
-      const todo = await todoController.delete(id);
-
-      if (!todo) {
-        return c.text('Todo not found', 404);
-      }
-
-      return c.json({ status: 'Success' });
-    } catch (err){
-      console.error(err);
-      throw err;
-    }
-  })
   .get('/todos/:id', async (c) => {
     try {
       const id = Number(c.req.param('id'));
@@ -65,6 +50,22 @@ const home = app
       }
 
       return c.json(todo);
+    } catch (err){
+      console.error(err);
+      throw err;
+    }
+  })
+  // This does not work due to the bug https://github.com/honojs/hono/issues/440
+  .delete('/todos/:id', async (c) => {
+    try {
+      const id = Number(c.req.param('id'));
+      const todo = await todoController.delete(id);
+
+      if (!todo) {
+        return c.text('Todo not found', 404);
+      }
+
+      return c.json({ status: 'Success' });
     } catch (err){
       console.error(err);
       throw err;
