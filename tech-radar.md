@@ -1,6 +1,6 @@
 ---
 title:      "Bun js"
-ring:       hold
+ring:       assess
 quadrant:   platforms-and-services
 featured:   true
 ---
