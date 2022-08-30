@@ -64,10 +64,10 @@ Bun can run JSX/TSX files on-the-spot, offering a big advantage over Node.js, as
 ### Database support
 | Framemork | Support | Comment |
 |---|---|---|
-| [Bun sqlite](https://github.com/oven-sh/bun#bunsqlite-sqlite3-module)  | :white_check_mark: | Nest utilizes express / fastify under the hood which leads to the same errors we have for the underlying framework |
+| [Bun sqlite](https://github.com/oven-sh/bun#bunsqlite-sqlite3-module)  | :white_check_mark: | Synchronous version of sqlite provided by bun. However there is an [github issue](https://github.com/oven-sh/bun/issues/978) raised already |
 | [Mongo](https://www.npmjs.com/package/mongodb)   | :x: | See [github issue](https://github.com/oven-sh/bun/issues/288) |
 | [Postgres](https://www.npmjs.com/package/pg) | :x: | See [github issue](https://github.com/oven-sh/bun/issues/288) |
-| [Sqlite](https://www.npmjs.com/package/sqlite3)  | :x: | Synchronous version of sqlite provided by bun. However there is an [github issue](https://github.com/oven-sh/bun/issues/978) raised already |
+| [Sqlite](https://www.npmjs.com/package/sqlite3)  | :x: |  |
 
 [Result of benchmarking](https://github.com/viktornord/bun-research/blob/main/README.md) - Bun is apparently faster when we run the same app on node with synchronous sqlite but if we run node with async sqlite then it beats bun. Probably if bun implements async sqlite it will be better and might be useful. 
 
