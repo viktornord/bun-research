@@ -1,8 +1,8 @@
 # bun-research
 
 ## Issues
-- Postgres and Mongo does not work with bun. Here is the related issue https://github.com/oven-sh/bun/issues/288
-- Major frameworks (Fastify, Express) does not work with bun.
+- Postgres and Mongo do not work with bun. Here is the related issue https://github.com/oven-sh/bun/issues/288
+- Major frameworks (Fastify, Express) do not work with bun.
 
 # Peformed tests
 
